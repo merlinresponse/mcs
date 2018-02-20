@@ -19,8 +19,6 @@
 
         <!-- Signature Pad -->
 
-        <script src="https://cdn.jsdelivr.net/npm/signature_pad@2.3.2/dist/signature_pad.min.js"></script>
-
         <link rel="stylesheet" href="css/signature-pad.css">
         <!-- Styles -->
         <style>
@@ -126,5 +124,8 @@
                 </div>
             </div>
         </div>
+
+        <script src="js/signature_pad.js"></script>
+        <script src="js/app.js"></script>
     </body>
 </html>
