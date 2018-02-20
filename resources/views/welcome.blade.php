@@ -88,7 +88,7 @@
             @endif
 
             <div class="content">
-                <div class="title m-b-md">
+          
 
                   <div id="signature-pad" class="signature-pad">
                      <div class="signature-pad--body">
@@ -113,7 +113,7 @@
                      </div>
                    </div>
 
-                </div>
+
 
                 <div class="links">
                     <a href="https://laravel.com/docs">Documentation</a>
