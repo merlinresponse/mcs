@@ -78,7 +78,7 @@
     <body>
       <a-scene>
         <a-assets>
-      <img id="house" src="https://img-new.cgtrader.com/items/725938/276bfab702/panorama-360-nordic-style-living-room-dining-room-09-3d-model-max.jpg">
+      <img id="house" src="../img/360_test.jpg">
         </a-assets>
 
         <a-sky id="house-360" radius="100" src="#house"></a-sky>
