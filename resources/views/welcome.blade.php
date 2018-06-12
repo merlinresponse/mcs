@@ -73,58 +73,26 @@
                 margin-bottom: 30px;
             }
         </style>
+          <script src="https://aframe.io/releases/0.5.0/aframe.min.js"></script>
     </head>
     <body>
-        <div class="flex-center position-ref full-height">
-            @if (Route::has('login'))
-                <div class="top-right links">
-                    @auth
-                        <a href="{{ url('/home') }}">Home</a>
-                    @else
-                        <a href="{{ route('login') }}">Login</a>
-                        <a href="{{ route('register') }}">Register</a>
-                    @endauth
-                </div>
-            @endif
+      <a-scene>
+        <a-assets>
+      <img id="house" src="https://img-new.cgtrader.com/items/725938/276bfab702/panorama-360-nordic-style-living-room-dining-room-09-3d-model-max.jpg">
+        </a-assets>
 
+        <a-sky id="house-360" radius="100" src="#house"></a-sky>
 
+        <a-entity class="link"></a-entity>
 
-
-                  <div id="signature-pad" class="signature-pad">
-                     <div class="signature-pad--body">
-                       <canvas></canvas>
-                     </div>
-                     <div class="signature-pad--footer">
-                       <div class="description">Sign above</div>
-
-                       <div class="signature-pad--actions">
-                         <div>
-                           <button type="button" class="button clear" data-action="clear">Clear</button>
-                           <button type="button" class="button" data-action="change-color">Change color</button>
-                           <button type="button" class="button" data-action="undo">Undo</button>
-
-                         </div>
-                         <div>
-                           <button type="button" class="button save" data-action="save-png">Save as PNG</button>
-                           <button type="button" class="button save" data-action="save-jpg">Save as JPG</button>
-                           <button type="button" class="button save" data-action="save-svg">Save as SVG</button>
-                         </div>
-                       </div>
-                     </div>
-                   </div>
-
-                   <div>
-                     <form action="welcome.php" method="post">
-                        Name: <input type="text" name="name"><br>
-                        E-mail: <input type="text" name="email"><br>
-                         <input type="file" accept="image/*" capture="camera" />
-                        <input type="submit">
-                      </form
-                  </div>
-
-        </div>
-
-        <script src="js/signature_pad.js"></script>
-        <script src="js/app.js"></script>
+        <a-camera>
+          <a-cursor id="cursor">
+            <a-animation begin="click" easing="ease-in" attribute="scale"
+                     fill="backwards" from="0.1 0.1 0.1" to="1 1 1" dur="150"></a-animation>
+            <a-animation begin="cursor-fusing" easing="ease-in" attribute="scale"
+                     from="1 1 1" to="0.1 0.1 0.1" dur="1500"></a-animation>
+          </a-cursor>
+        </a-camera>
+      </a-scene>
     </body>
 </html>
