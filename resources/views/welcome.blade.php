@@ -83,7 +83,7 @@
 
         <a-sky id="house-360" radius="100" src="#house"></a-sky>
 
-        <a-box color="tomato" depth="2" height="4" width="0.5"></a-box>
+        <a-box position="-1 0.5 -3" rotation="0 45 0" color="#4CC3D9" shadow></a-box>
 
         <a-camera>
           <a-cursor id="cursor">
