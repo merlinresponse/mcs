@@ -73,7 +73,7 @@
                 margin-bottom: 30px;
             }
         </style>
-          <script src="https://aframe.io/releases/0.5.0/aframe.min.js"></script>
+          <script src="https://aframe.io/releases/0.8.2/aframe.min.js"></script>
     </head>
     <body>
       <a-scene>
