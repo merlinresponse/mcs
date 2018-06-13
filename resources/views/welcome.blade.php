@@ -85,6 +85,8 @@
 
         <a-entity class="link"></a-entity>
 
+        <a-box color="tomato" depth="2" height="4" width="0.5"></a-box>
+
         <a-camera>
           <a-cursor id="cursor">
           </a-cursor>
