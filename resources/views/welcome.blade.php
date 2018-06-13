@@ -78,12 +78,10 @@
     <body>
       <a-scene>
         <a-assets>
-      <img id="house" src="../img/360_test.jpg">
+          <img id="house" src="../img/360_test.jpg">
         </a-assets>
 
         <a-sky id="house-360" radius="100" src="#house"></a-sky>
-
-        <a-entity class="link"></a-entity>
 
         <a-box color="tomato" depth="2" height="4" width="0.5"></a-box>
 
