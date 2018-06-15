@@ -74,6 +74,7 @@
             }
         </style>
           <script src="https://aframe.io/releases/0.8.2/aframe.min.js"></script>
+          <script src="https://unpkg.com/aframe-layout-component@4.2/dist/aframe-layout-component.min.js"></script>
     </head>
     <body>
       <a-scene>
@@ -83,7 +84,11 @@
 
         <a-sky id="house-360" radius="100" src="#house"></a-sky>
 
-        <a-box position="-1 0.5 -3" rotation="0 45 0" color="#4CC3D9" shadow></a-box>
+        <a-entity layout="type: line; margin: 2">
+          <a-box position="0 0 0"></a-box>
+          <a-box position="2 0 0"></a-box>
+          <a-box position="4 0 0"></a-box>
+        </a-entity>
 
         <a-camera>
           <a-cursor id="cursor">
