@@ -91,7 +91,15 @@
         </a-entity>
 
         <a-camera>
-          <a-cursor id="cursor">
+            <a-entity cursor="fuse: true;"
+                      position="0 0 -3"
+                      geometry="primitive: ring"
+                      material="color: black; shader: flat">
+              <a-animation begin="click" easing="ease-in" attribute="scale" dur="150"
+                           fill="forwards" from="0.1 0.1 0.1" to="1 1 1"></a-animation>
+              <a-animation begin="cursor-fusing" easing="ease-in" attribute="scale" dur="1500"
+                           fill="backwards" from="1 1 1" to="0.1 0.1 0.1"></a-animation>
+            </a-entity>
           </a-cursor>
         </a-camera>
       </a-scene>
