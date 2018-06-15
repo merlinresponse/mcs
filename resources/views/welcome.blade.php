@@ -84,7 +84,7 @@
 
         <a-sky id="house-360" radius="100" src="#house"></a-sky>
 
-        <a-entity layout="type: line; margin: 2">
+        <a-entity layout="type: box; margin: 1; plane: yz, columns: 1">
           <a-box position="0 0 0"></a-box>
           <a-box position="2 0 0"></a-box>
           <a-box position="4 0 0"></a-box>
