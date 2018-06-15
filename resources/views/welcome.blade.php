@@ -84,10 +84,10 @@
 
         <a-sky id="house-360" radius="100" src="#house"></a-sky>
 
-        <a-entity position="0 3 0" layout="type: box; margin: 1; plane: xz, columns: 1">
-          <a-box ></a-box>
-          <a-box ></a-box>
-          <a-box ></a-box>
+        <a-entity position="0 3 -3" layout="type: box; margin: 1; plane: xz, columns: 1">
+          <a-box position="0 0 0"></a-box>
+          <a-box position="2 0 0"></a-box>
+          <a-box position="4 0 0"></a-box>
         </a-entity>
 
         <a-camera>
