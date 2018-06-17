@@ -96,7 +96,7 @@
         </a-assets>
 
         <a-sky id="house-360" radius="100" src="#house"></a-sky>
-
+    <a-box position="0 0 0" id="box" color="blue"></a-box>
         <a-entity camera look-controls>
           <a-entity cursor="fuse: true; fuseTimeout: 500"
                     position="0 0 -1"
@@ -105,7 +105,7 @@
           </a-entity>
         </a-entity>
 
-        <a-box position="0 0 0" id="box" cursor-listener material="color: blue"></a-box>
+    
       </a-scene>
     </body>
 </html>
