@@ -105,7 +105,7 @@
           </a-entity>
         </a-entity>
 
-        <a-entity id="box" cursor-listener geometry="primitive: box" material="color: blue"></a-entity>
+        <a-entity position="0 0 0" id="box" cursor-listener geometry="primitive: box" material="color: blue"></a-entity>
       </a-scene>
     </body>
 </html>
