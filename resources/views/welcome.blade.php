@@ -76,7 +76,7 @@
           <script src="https://aframe.io/releases/0.8.2/aframe.min.js"></script>
           <script src="https://unpkg.com/aframe-layout-component@4.2/dist/aframe-layout-component.min.js"></script>
           <script>
-                AFRAME.registerComponent('cursor-listener', {
+            /*    AFRAME.registerComponent('cursor-listener', {
                   init: function () {
                     var lastIndex = -1;
                     var COLORS = ['red', 'green', 'blue'];
@@ -86,7 +86,7 @@
                       console.log('I was clicked at: ', evt.detail.intersection.point);
                     });
                   }
-                  });
+                }); */
           </script>
     </head>
     <body>
@@ -105,7 +105,7 @@
           </a-entity>
         </a-entity>
 
-    
+
       </a-scene>
     </body>
 </html>
